@@ -42,13 +42,4 @@ The application follows a provided frontend style guide, including:
 ---
 
 ## 📂 Project Structure
-Advice-Generator-App/
-├── index.html
-├── style.css
-├── script.js
-└── images/
-├── icon-dice.svg
-├── pattern-divider-desktop.svg
-├── pattern-divider-mobile.svg
-└── favicon-32x32.png
 
