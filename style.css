@@ -1,0 +1,107 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  min-height: 100vh;
+  background-color: hsl(218, 23%, 16%); /* Blue 950 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+/* Card */
+.advice-card {
+  background-color: hsl(217, 19%, 24%); /* Blue 900 */
+  max-width: 540px;
+  width: 100%;
+  padding: 48px 32px 72px;
+  border-radius: 16px;
+  text-align: center;
+  position: relative;
+}
+
+/* Advice ID */
+.advice-id {
+  color: hsl(150, 100%, 66%); /* Green 300 */
+  font-size: 13px;
+  letter-spacing: 4px;
+  margin-bottom: 24px;
+}
+
+/* Advice Text */
+.advice-text {
+  color: hsl(193, 38%, 86%); /* Blue 200 */
+  font-size: 28px;
+  line-height: 1.4;
+  font-weight: 800;
+  margin-bottom: 40px;
+  font-family: Manrope;
+}
+
+/* Divider */
+.divider {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* Dice Button */
+.dice-btn {
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.dice-btn:hover {
+  box-shadow: 0 0 40px hsl(150, 100%, 66%);
+}
+
+/* Fade animation */
+.fade {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile */
+@media (max-width: 375px) {
+  .advice-text {
+    font-size: 24px;
+  }
+}
