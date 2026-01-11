@@ -42,7 +42,7 @@ The application follows a provided frontend style guide, including:
 ---
 
 ## 📂 Project Structure
-\Advice-Generator-App/
+Advice-Generator-App/
 ├── index.html
 ├── style.css
 ├── script.js
